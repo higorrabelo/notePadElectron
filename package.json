@@ -1,0 +1,35 @@
+{
+  "name": "nova-pasta",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/main.js",
+  "build": {
+    "appId": "br.notepad",
+    "productName": "NotePad",
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": "nsis"
+    },
+    "mac": {
+      "target": "dmg"
+    },
+    "linux": {
+      "target": "AppImage"
+    }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ./src/main.js",
+    "pack": "electron-builder"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@electron-forge/cli": "^6.4.2",
+    "electron": "^27.0.0",
+    "electron-builder": "^24.6.4"
+  }
+}

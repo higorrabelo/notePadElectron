@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu App</title>
+    <link rel="stylesheet" href="./css/estilo.css">
+</head>
+<body>
+    <nav class="ferramenta">
+        <ul>
+            <li class="menu-item">Arquivo
+                <ul class="submenu">
+                    <li><a href="#" onclick="abrir()">Abrir</a></li>
+                    <li><a href="#" onclick="novo()">Novo</a></li>
+                    <li><a id="salvar" onclick="salvar()">Salvar</a></li>
+                    <li><hr></li>
+                    <li><a href="#" id="sair" onclick="fechar()">Sair</a></li>
+                </ul>
+            </li>
+            <li class="menu-item">Editar
+                <ul class="submenu">
+                    <li><a href="#" onclick="colar()">Colar</a></li>
+                    <li><a href="#" onclick="copiar()">Copiar</a></li>
+                    <li><a href="#" onclick="recortar()">Recortar</a></li>
+                </ul>
+            </li>
+            <li class="menu-item">Ajuda
+                <ul class="submenu">
+                    <li><a href="#" id="infos" onclick="pagina('formulario')">Informações</a></li>
+                    
+                </ul>
+            </li>
+            <li id="drags">
+                    NotePad
+            </li>
+
+        </ul>
+           
+        <div class="bts">
+            <button class="btnMinimizar" onclick="minimizar()">-</button>
+            <button class="btnFechar" onclick="fechar()">X</button>
+        </div>
+    </nav> 
+   <div class="container" id="container">
+       <textarea name="areaTexto" id="areaTexto" cols="30" rows="10"></textarea>
+   </div>
+
+    <script src="./javascript/renderer.js"></script>
+</body>
+</html>

@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(129, 129, 129);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+#drags{
+    position: absolute;
+    -webkit-app-region: drag;
+    height: 20px;
+    width: calc(85vw - 100px);
+    text-align: center;
+    color: white;
+}
+
+.ferramenta{   
+    position: relative;
+    background-color: rgb(61, 61, 61);
+    padding: 10px;
+    font-size:15px;
+    color: white;
+    height: 40px;
+    width: 100%;
+
+}
+.ferramenta ul{
+    list-style: none;
+}
+.ferramenta li{
+    display: inline-block;
+    position: relative;
+    cursor: default;
+}
+.ferramenta li:hover{
+    background-color: rgb(61, 61, 61);;
+    border-radius: 6px;
+}
+.ferramenta li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.submenu{
+    display: none;
+    position: absolute;
+    background-color: rgb(61, 61, 61);
+    left: 0;
+    width: 400px;
+    top: 100%;
+    z-index: 1;
+}
+.ferramenta li:hover .submenu {
+    display: block;
+}
+
+.submenu li{
+    display:block;
+}
+.submenu li a {
+    margin: 10px;
+
+}
+.submenu li a:hover {
+    background-color:rgba(255, 255, 255, 0.562);
+    border-radius: 5px;  
+
+}
+.submenu hr{
+    color: rgb(104, 103, 103);
+}
+
+.menu-item{
+    margin-right: 20px;
+}
+
+
+.btnFechar{
+    background-color: red;
+    color: white;
+    height: 25px;
+    width: 25px;
+}
+.btnMinimizar{
+    background-color: rgb(255, 230, 0);
+    color: rgb(0, 0, 0);
+    height: 25px;
+    width: 25px;
+}
+.bts{
+    position: absolute;
+    margin-top: 10px;
+    top:0;
+    right: 0;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* height: 95vh; */
+    width: 95vw;
+}
+
+.corpo{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(21, 139, 243);
+    color: white;
+    padding: 20px;
+    width: 300px;
+    height: 300px;
+    border-radius: 12px;
+}
+
+.corpo label{
+    display: block;
+}
+.corpo input[type="password"]{
+    background-color: white;
+    height: 30px;
+    width: 250px;
+    border-radius: 9px;
+    outline: none;
+    padding-left: 4px;
+    box-shadow: 9px 9px 9px rgba(0,0,0,0.38);
+}
+.corpo input[type="text"]{
+    background-color: white;
+    height: 30px;
+    width: 250px;
+    border-radius: 9px;
+    outline: none;
+    padding-left: 4px;
+    box-shadow: 9px 9px 9px rgba(0,0,0,0.38);
+}
+.corpo input[type="button"]{
+    margin: 0 auto;
+    height: 30px;
+    width: 150px;
+    margin-top: 20px;
+}
+#areaTexto{
+    padding:20px;
+    height: calc(100vh - 80px);
+    margin-top: 40px;
+    width: 80%;
+    outline: none;
+    border-radius: 12px;
+    box-shadow: 9px 9px 9px rgba(0,0,0,0.38);
+    font-size: 20px;
+}
